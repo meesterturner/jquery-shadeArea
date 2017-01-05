@@ -1,0 +1,72 @@
+<html>
+	<head>
+		<style>
+			body {
+				background-image: url("bgtest.jpg");
+				font-family: arial;
+				color: white;
+				font-weight: bold;
+				font-size: 18pt;
+			}
+			
+			#testscroll {
+				width: 220px;
+				height: 220px;
+				overflow-y: auto;
+				color: yellow;
+			}
+
+		</style>
+		<script language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script language="javascript" src="jquery-shadeArea.js"></script>
+		<script>
+			$(document).ready(function(){
+				
+				$("#testscroll").shadeArea({
+					color: "red"
+				});
+				
+				
+				$("#testjq").shadeArea({
+					opacity: 0.5,
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div id="topbit">
+			Top bit!<br />
+			Ipsum loreum whatever<br />
+			ssflhdlkh  diuhdkjhdjfhg djfh<br />
+			
+		</div>
+		
+		<div id="testscroll">
+			Pack my box with five dozen liquor jugs<br />
+			Pack my box with five dozen liquor jugs<br />
+			Pack my box with five dozen liquor jugs<br />
+			Pack my box with five dozen liquor jugs<br />
+			Pack my box with five dozen liquor jugs<br />
+			Pack my box with five dozen liquor jugs<br />
+			Pack my box with five dozen liquor jugs<br />
+			Pack my box with five dozen liquor jugs<br />
+			Pack my box with five dozen liquor jugs<br />
+			Pack my box with five dozen liquor jugs<br />
+			Pack my box with five dozen liquor jugs<br />
+		</div>
+		
+		<div id="testjq">
+			Pack my box with five dozen liquor jugs<br />
+			Pack my box with five dozen liquor jugs<br />
+			Pack my box with five dozen liquor jugs<br />
+			Pack my box with five dozen liquor jugs<br />
+			Pack my box with five dozen liquor jugs<br />
+			Pack my box with five dozen liquor jugs<br />
+			Pack my box with five dozen liquor jugs<br />
+			Pack my box with five dozen liquor jugs<br />
+			Pack my box with five dozen liquor jugs<br />
+			Pack my box with five dozen liquor jugs<br />
+			Pack my box with five dozen liquor jugs<br />
+		</div>
+	</body>
+</html>
