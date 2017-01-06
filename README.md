@@ -15,5 +15,7 @@ $(selector).shadeArea({
 `selector` is your jQuery selector.
 
 `color` parameter specifies the color for the shader and can be any valid color used in CSS. Default is "black".
+
 `opacity` parameter specifies how dark the shader would be. Should be a decimal between 0.0 (not visible) and 1.0 (solid color). Default is 0.7
+
 `id` parameter specifies the id for the newly created shader div. If omitted, an id of "shader_", suffixed by a number, is generated
