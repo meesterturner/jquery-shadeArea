@@ -1,72 +1,72 @@
 <html>
 	<head>
-		<style>
-			body {
-				background-image: url("bgtest.jpg");
-				font-family: arial;
-				color: white;
-				font-weight: bold;
-				font-size: 18pt;
-			}
-			
-			#testscroll {
-				width: 220px;
-				height: 220px;
-				overflow-y: auto;
-				color: yellow;
-			}
-
-		</style>
+		<link rel="stylesheet" href="demo.css" />
 		<script language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script language="javascript" src="jquery-shadeArea.js"></script>
 		<script>
 			$(document).ready(function(){
-				
-				$("#testscroll").shadeArea({
-					color: "red"
+			
+				// Let's shade everything with the .shadeMe class
+				// 30% navy
+				$(".shadeMe").shadeArea({
+					color: "navy",
+					opacity: 0.3
 				});
 				
+				// Shade the overlays. Use the defaults.
+				$(".overlay").shadeArea();
 				
-				$("#testjq").shadeArea({
-					opacity: 0.5,
-				});
 			});
 		</script>
 	</head>
 	<body>
 		<div id="topbit">
-			Top bit!<br />
-			Ipsum loreum whatever<br />
-			ssflhdlkh  diuhdkjhdjfhg djfh<br />
+			shadeArea jQuery Plugin Demo
+		</div>
+		<hr />
+		<div id="testscroll" class="shadeMe">
+			This is a scrollable div. Because the shading is done
+			to match the size of the display area but put behind
+			the original div, the shading remains constant.<hr />
+			This is a scrollable div. Because the shading is done
+			to match the size of the display area but put behind
+			the original div, the shading remains constant.<hr />
+			This is a scrollable div. Because the shading is done
+			to match the size of the display area but put behind
+			the original div, the shading remains constant.<hr />
+			This is a scrollable div. Because the shading is done
+			to match the size of the display area but put behind
+			the original div, the shading remains constant.<hr />
+			This is a scrollable div. Because the shading is done
+			to match the size of the display area but put behind
+			the original div, the shading remains constant.
+		</div>
+		
+		<div id="testdiv" class="shadeMe">
+			This is just a regular div. Nothing too exciting to see here<hr />
+			This is just a regular div. Nothing too exciting to see here<hr />
+			This is just a regular div. Nothing too exciting to see here<hr />
+			This is just a regular div. Nothing too exciting to see here<hr />
+			This is just a regular div. Nothing too exciting to see here<hr />
+			This is just a regular div. Nothing too exciting to see here<hr />
+			This is just a regular div. Nothing too exciting to see here<hr />
+			This is just a regular div. Nothing too exciting to see here<hr />
+			This is just a regular div. Nothing too exciting to see here
 			
 		</div>
 		
-		<div id="testscroll">
-			Pack my box with five dozen liquor jugs<br />
-			Pack my box with five dozen liquor jugs<br />
-			Pack my box with five dozen liquor jugs<br />
-			Pack my box with five dozen liquor jugs<br />
-			Pack my box with five dozen liquor jugs<br />
-			Pack my box with five dozen liquor jugs<br />
-			Pack my box with five dozen liquor jugs<br />
-			Pack my box with five dozen liquor jugs<br />
-			Pack my box with five dozen liquor jugs<br />
-			Pack my box with five dozen liquor jugs<br />
-			Pack my box with five dozen liquor jugs<br />
+		<div id="noborder" class="shadeMe">
+			Very simple.
 		</div>
 		
-		<div id="testjq">
-			Pack my box with five dozen liquor jugs<br />
-			Pack my box with five dozen liquor jugs<br />
-			Pack my box with five dozen liquor jugs<br />
-			Pack my box with five dozen liquor jugs<br />
-			Pack my box with five dozen liquor jugs<br />
-			Pack my box with five dozen liquor jugs<br />
-			Pack my box with five dozen liquor jugs<br />
-			Pack my box with five dozen liquor jugs<br />
-			Pack my box with five dozen liquor jugs<br />
-			Pack my box with five dozen liquor jugs<br />
-			Pack my box with five dozen liquor jugs<br />
+		<div id="overlay1" class="overlay">
+			Overlay One
+		</div>
+		<div id="overlay2" class="overlay">
+			Overlay Two
+		</div>
+		<div id="overlay3" class="overlay">
+			Overlay Three
 		</div>
 	</body>
 </html>

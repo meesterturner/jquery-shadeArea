@@ -1,0 +1,61 @@
+body {
+	background-image: url("bgtest.jpg");
+	font-family: arial;
+	color: white;
+	font-weight: bold;
+	font-size: 18pt;
+}
+
+#testscroll {
+	width: 220px;
+	height: 220px;
+	overflow-y: auto;
+	color: yellow;
+	border: 1px black solid;
+}
+
+#testdiv {
+	width: 300px;
+	left: 300px;
+	top: 200px;
+	position: fixed;
+	border: 3px black solid;
+}
+
+#noborder {
+	width: 75px;
+	left: 10px;
+	top: 400px;
+	position: fixed;	
+}
+
+.shadeMe {
+	font-size: 14pt;
+	font-weight: normal;
+}
+
+.overlay {
+	border: thin black dotted;
+	font-size: 14pt;
+	font-weight: normal;
+	color: cyan;
+	text-align: center;
+	width: 300px;
+	height: 300px;
+	position: fixed;
+}
+
+#overlay1 {
+	left: 700px;
+	top: 150px;
+}
+
+#overlay2 {
+	left: 850px;
+	top: 300px;
+}
+
+#overlay3 {
+	left: 770px;
+	top: 400px;
+}
