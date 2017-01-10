@@ -51,7 +51,8 @@
 				"borderLeftWidth": thingToShade.css("borderLeftWidth"),
 				"borderBottomWidth": thingToShade.css("borderBottomWidth"),
 				"borderRightWidth": thingToShade.css("borderRightWidth"),
-				"borderStyle": "solid",
+				"borderStyle": thingToShade.css("borderStyle"),
+				"borderRadius": thingToShade.css("borderRadius"),
 				"top": origTop,
 				"left": origLeft,
 				"zIndex": origZ,
@@ -65,6 +66,9 @@
 			
 			$("body").append(shader);
 			
+			// In CSS, move the original item to the same position
+			// but using absolute positioning so that it appears
+			// above the shader
 			thingToShade.css({
 				"position": "absolute",
 				"width": thingToShade.width(),
