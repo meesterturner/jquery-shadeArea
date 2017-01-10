@@ -23,15 +23,20 @@
 			var origTop  = thingToShade.offset().top;
 			var origLeft = thingToShade.offset().left;
 			
-			// Generate a new ID, hopefully unique
+			// Use the ID given in the options, otherwise
+			// generate a new ID, hopefully unique. If the
+			// element we're shading has an ID (e.g. "origElement")
+			// the shader will have a prefix added so the shader
+			// would be "shadeArea_origElement"
 			var newId = settings.id;
 			var idPrefix = "shadeArea_";
+			var thisId = thingToShade.attr("id");
 			
 			if(newId == null  || newId == "") {
-				if(thingToShade.id == null || thingToShade.id == "") {
+				if(thisId == null || thisId == undefined || thisId == "") {
 					newId = idPrefix + origTop.toString() + origLeft.toString() + origZ.toString();
 				} else {
-					newId = idPrefix + thingToShade.id;
+					newId = idPrefix + thisId;
 				} 
 			}
 
