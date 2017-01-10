@@ -18,4 +18,4 @@ $(selector).shadeArea({
 
 `opacity` parameter specifies how dark the shader would be. Should be a decimal between 0.0 (not visible) and 1.0 (solid color). Default is 0.7
 
-`id` parameter specifies the id for the newly created shader div. If omitted, an id of "shader_", suffixed by a number, is generated
+`id` parameter specifies the id for the newly created shader div. If omitted, an id of "shader_", suffixed by the ID of the original element, or a number if the element being shaded has no ID, is generated
