@@ -1,0 +1,27 @@
+{
+  "name": "jquery-shadearea",
+  "version": "1.0.0",
+  "description": "jQuery plugin to create a darker, shaded area behind elements",
+  "main": "jquery-shadeArea.js",
+  "dependencies": {
+	"jquery": "1.10.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meesterturner/jquery-shadeArea.git"
+  },
+  "keywords": [
+    "jquery-plugin",
+    "ecosystem:jquery",
+    "shadearea"
+  ],
+  "author": "Paul Turner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/meesterturner/jquery-shadeArea/issues"
+  },
+  "homepage": "https://github.com/meesterturner/jquery-shadeArea#readme"
+}
