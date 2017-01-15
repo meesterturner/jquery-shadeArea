@@ -4,7 +4,7 @@
   "description": "jQuery plugin to create a darker, shaded area behind elements",
   "main": "jquery-shadeArea.js",
   "dependencies": {
-	"jquery": "1.10.2"
+	"jquery": ">=1.10.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
